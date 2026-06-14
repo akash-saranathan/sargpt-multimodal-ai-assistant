@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    image: myapp:v1
+    container_name: multimodal_agent_v1
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./temp:/app/temp
+      - ./uploads:/app/uploads
+    restart: unless-stopped

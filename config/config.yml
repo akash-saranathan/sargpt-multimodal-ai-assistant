@@ -1,0 +1,30 @@
+models:
+  - type: main
+    engine: openai
+    model: gpt-4o-mini
+    parameters:
+      max_tokens: 500
+
+instructions:
+  - type: general
+    content: |
+      You are a helpful AI assistant. 
+      Keep your responses concise, limited to exactly 2 to 3 sentences.
+
+rails:
+  input:
+    flows:
+      - self check input
+
+prompts:
+  - task: self_check_input
+    content: |
+      Your task is to check if the user message below complies with policy.
+      User message: "{{ user_input }}"
+      Should this message be blocked? Answer Yes or No.
+      Answer:
+
+  - task: generate_bot_message
+    content: "{{ bot_message }}"
+    # FIX: Remove the 'type: main' dictionary and put max_tokens here
+    max_tokens: 300

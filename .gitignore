@@ -1,0 +1,45 @@
+# Secrets
+.env
+.env.*
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Node.js
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Temporary files
+*.tar
+*.tmp
+
+# Python environment files
+.python-version
+
+# Test/coverage
+.coverage
+.pytest_cache/
+
+# Docker
+docker-compose.override.yml

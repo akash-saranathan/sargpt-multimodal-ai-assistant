@@ -1,0 +1,29 @@
+# 1. Define the intents for bad behavior
+define user provide sensitive info
+  "my email is test@example.com"
+  "my phone number is 555-1234"
+  "here is my social security number"
+
+define user use harsh words
+  "you are [bad word]"
+  "shut up"
+  "go away"
+
+# 2. Define how the bot should react
+define bot refuse sensitive info
+  "I'm sorry, but I cannot process personal information like emails or phone numbers for security reasons."
+
+define bot refuse harsh words
+  "I strive to be helpful and polite. Please refrain from using harsh language."
+
+# 3. Create the "Rails" (Flows)
+define flow pii_detection
+  user provide sensitive info
+  bot refuse sensitive info
+  stop
+
+define flow toxicity_detection
+  user use harsh words
+  bot refuse harsh words
+  stop
+

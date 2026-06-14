@@ -1,0 +1,12 @@
+define flow safety check
+  user says something
+  $decision = execute action_safety_router
+
+  if $decision == "block"
+    bot say "🚫 Request blocked due to safety policy."
+    stop
+
+  if $decision == "warn"
+    bot say "⚠️ Your request may contain sensitive information."
+
+  bot respond

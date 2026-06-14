@@ -1,0 +1,13 @@
+.env
+__pycache__
+*.pyc
+*.pyo
+.git
+.gitignore
+frontend/node_modules
+frontend/build
+frontend/.next
+temp/*
+*.log
+*.egg-info
+.DS_Store
