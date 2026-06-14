@@ -47,28 +47,7 @@ Built using **FastAPI** and **React**, SARGPT is containerized with **Docker** a
 * Kubernetes
 * GitHub
 
----
 
-## Architecture
-
-```text
-User
- │
- ▼
-React Frontend
- │
- ▼
-FastAPI Backend
- │
- ├── Conversational AI
- ├── LangChain Agent
- ├── Knowledge Base Search (RAG)
- ├── Guardrails Layer
- └── Multimodal Processing
- │
- ▼
-LLMs & AI Models
-```
 
 ---
 
@@ -122,20 +101,7 @@ Access Swagger UI:
 http://localhost:8080/docs
 ```
 
----
 
-## Screenshots
-
-Add screenshots for:
-
-* Chat Interface
-* Voice Input Workflow
-* Knowledge Base Search
-* Swagger API Documentation
-* Docker Container Execution
-* Kubernetes Pods Running
-
----
 
 ## Future Enhancements
 
