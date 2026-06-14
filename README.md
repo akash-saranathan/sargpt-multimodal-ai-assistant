@@ -6,7 +6,7 @@ Built using **FastAPI** and **React**, SARGPT is containerized with **Docker** a
 
 ---
 
-## 🚀 Features
+## Features
 
 * Conversational AI with session-based memory
 * Text, Voice, Image, and Document inputs
@@ -20,7 +20,7 @@ Built using **FastAPI** and **React**, SARGPT is containerized with **Docker** a
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### AI & NLP
 
